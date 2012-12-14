@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Search</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<h1>Logo</h1>
+			</div>
+			<div class="header_menu">
+
+			</div>
+		</div>
+		<div class="body">
+			<h2>Body</h2>
+
+				<div class="searchPanel">
+				<h1>"Search for your flight!" </h1>
+				<form wicket:id="form">
+        		<input type="text" wicket:id="msgInput" value="" size="50" />
+        		<input type="submit" value="set message" />
+   				</form>
+   				<span wicket:id="From"></span>
+    			<span wicket:id="msg" id="msg">Message goes here</span>
+    			<span wicket:id="To"></span>
+    			
+<br/>
+		<wicket:link>                                               |#A
+    <ul>
+
+        <li><a href="FormInput.html">Search Panel</a></li>        |#C
+    </ul>
+    </wicket:link>
+			</div>	
+				
+		</div>
+	</body>
+</html>
