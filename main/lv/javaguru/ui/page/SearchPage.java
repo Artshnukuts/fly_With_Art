@@ -1,9 +1,12 @@
 package lv.javaguru.ui.page;
 
 import java.sql.SQLException;
+import java.util.Collection;
+import java.util.Iterator;
 
 import lv.javaguru.app.Ticket;
 import lv.javaguru.dao.FactoryFly;
+import lv.javaguru.dao.TicketDao;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -13,7 +16,8 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
-import org.hibernate.mapping.Collection;
+
+
 
 public class SearchPage extends WebPage {
 	private static final long serialVersionUID = 1L;
@@ -22,10 +26,19 @@ public class SearchPage extends WebPage {
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public SearchPage(final PageParameters parameters) throws SQLException {
-  
+		
+		
 	add(new Label("From", new Model("From: ")));
-	Ticket tickets = FactoryFly.getInstance().getTicketDao().getTicketById(1);
-			message = tickets.toString();
+	
+    Collection tickets = FactoryFly.getInstance().getTicketDao().getAllTickets();
+    Iterator iterator = tickets.iterator();
+
+    while (iterator.hasNext()) {
+    	Ticket ticket = (Ticket) iterator.next();
+    	message = ticket.getArriveDate();
+        System.out.println(ticket.getArriveDate());
+      }
+
 
 			add(new Label("To", new Model("To: ")));
 

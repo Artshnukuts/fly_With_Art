@@ -5,7 +5,7 @@
 
 <hibernate-mapping package="lv.javaguru.app">
   <class name="Ticket" table="TICKETS">
-    <id column="T_ID" name="t_id" type="java.lang.Integer">
+    <id column="C_ID" name="t_id" type="java.lang.Integer">
       <generator class="increment"/>
     </id>
     <property column="fromTown" name="fromTown" type="java.lang.Integer"/>
