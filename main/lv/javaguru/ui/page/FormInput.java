@@ -1,24 +1,15 @@
 package lv.javaguru.ui.page;
-import java.util.Map;
-
-import lv.javaguru.model.Course;
 import lv.javaguru.model.FormSearchInput;
-import lv.javaguru.ui.WicketApplication;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.wicket.request.mapper.parameter.PageParameters;
-import org.apache.wicket.markup.html.link.BookmarkablePageLink;
-import org.apache.wicket.markup.html.link.Link;
-import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.markup.html.WebPage;
 
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.markup.html.form.Button;
-import org.apache.wicket.markup.html.form.CheckBox;
-import org.apache.wicket.markup.html.form.CheckGroup;
 import org.apache.wicket.markup.html.form.DropDownChoice;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.RadioChoice;
@@ -32,6 +23,7 @@ public class FormInput extends WebPage {
 
 	}
 	
+	@SuppressWarnings("serial")
 	private class InputForm extends Form<FormSearchInput>
 	{
 		

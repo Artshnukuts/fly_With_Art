@@ -25,6 +25,11 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.hibernate.eclipse.console.hibernateBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
@@ -32,12 +37,33 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
+		<nature>org.hibernate.eclipse.console.hibernateNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
 			<name>test/log4j.properties</name>
 			<type>1</type>
 			<location>C:/Users/Arturix/workspace/fly_With_Art/test/log4j.properties</location>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/antlr-2.7.6.jar</name>
+			<type>1</type>
+			<location>C:/Users/Arturix/workspace/fly_With_Art/lib/antlr-2.7.6.jar</location>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/dom4j-1.6.1.jar</name>
+			<type>1</type>
+			<location>C:/Users/Arturix/workspace/fly_With_Art/lib/dom4j-1.6.1.jar</location>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar</name>
+			<type>1</type>
+			<location>C:/Users/Arturix/workspace/fly_With_Art/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar</location>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/hibernate3.jar</name>
+			<type>1</type>
+			<location>C:/Users/Arturix/workspace/fly_With_Art/WebContent/WEB-INF/lib/hibernate3.jar</location>
 		</link>
 	</linkedResources>
 </projectDescription>

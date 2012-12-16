@@ -24,6 +24,4 @@ public class UserTest {
 
 		assertTrue(user.isACorrectPassword(newPassword));
 	}
-
-	
 }

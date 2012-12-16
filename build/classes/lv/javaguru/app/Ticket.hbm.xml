@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="lv.javaguru.app">
+  <class name="Ticket" table="TICKETS">
+    <id column="T_ID" name="t_id" type="java.lang.Integer">
+      <generator class="increment"/>
+    </id>
+    <property column="fromTown" name="fromTown" type="java.lang.Integer"/>
+    <property column="toTown" name="toTown" type="java.lang.Integer"/>
+    <property column="departDate" name="departDate" type="java.lang.String"/>
+    <property column="arriveDate" name="arriveDate" type="java.lang.String"/>
+    <property column="valuta" name="valuta" type="java.lang.String"/>
+    <property column="prize" name="prize" type="java.lang.Double"/>
+  </class>
+</hibernate-mapping>
